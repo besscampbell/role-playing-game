@@ -27,8 +27,8 @@ Objectives:
 
 Logic can include:
 - *Character creation*
---> generate different character types (PromQueen, Pilot) with special attributes ("addCharacterToState").
---> Attributes e.g. strength, intelligence, snark, charm, agility.
+--> generate different character types (PromQueen, Pilot) with special attributes ("addCharacterToState").(_completed_)
+--> Attributes e.g. strength, intelligence, snark, charm, agility.(_completed_)
 --> update attributes ("updateState") using composition, e.g. snark: 100, monster-blasting: 200
 
 - *Battle system*

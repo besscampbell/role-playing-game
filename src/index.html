@@ -1,8 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Document</title>
+  <title>Sci-Fi/80's Prom RPG</title>
 </head>
 <body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>SCI-FI 80'S HIGH SCHOOL RPG (pew pew!)</h1>
+    </div>
+    <form id="rpgForm">
+      <div class="card">
+        <div class="card-body">
+          <div class="form-group">
+            <div class="dropdown">
+              <label for="dropDownCharacter">Choose Your Character:</label>
+              <select class="btn btn-secondary dropdown-toggle" id="dropDownCharacter" name="dropDownCharacter">
+                <option for="dropDownCharacter" disabled>Choose a Character:</option>
+                <option for="dropDownCharacter" value="pilot">Pilot</option>
+                <option for="dropDownCharacter" value="promQueen">Prom Queen</option>
+                <option for="dropDownCharacter" value="timeTraveler"> Traveler</option>
+                <option for="dropDownCharacter" value="blorgon">Blorgon</option>
+                <option for="dropDownCharacter" value="android">Android</option>
+              </select>
+              <div class="form-group">
+                <label for="characterName">Enter a name for your chosen character.</label>
+                <input id="characterName" class="form-control" type="text" placeholder="Janie 'the Rock' Johnson" required>
+              </div>
+              <button type="submit" class="btn btn-success" id="playButton">PLAY</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+    <div class="row" id="hiddenResponse">
+      <div class="card">
+        <div class="card-body">
+          <div id="showCharacterStats"></div>
+          <div id="showErrors"></div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

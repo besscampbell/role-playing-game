@@ -1,4 +1,4 @@
-import { updateStateObj, defaultValues, addCharToState, changeCharState } from '../src/character.js';
+import { updateStateObj, androidDefaultValues, addCharToState, changeCharState } from '../src/js/character.js';
 
 //required for full line coverage - similar to constructor tests in OOP
 describe('character', () => {
@@ -8,31 +8,14 @@ describe('character', () => {
   });
 
   test("should show character added state,", ()=> {
-      const test = addCharToState(defaultValues)("test")
-      expect(updateStateObj(test)).toEqual({test:{strength: 0, intelligence: 0, snark: 0, charm: 0, agility: 0, characterType: ""}});
+    const test = addCharToState(androidDefaultValues)("test");
+    const testState = updateStateObj(test);
+    expect(testState).toEqual({test:{strength: 8, intelligence: 10, snark: 1, charm: 1, agility: 7, characterType: "android"}});
   });
 
     test("should change character state", () => {
-        const test = addCharToState(defaultValues)("test")
-        const test2 = changeCharState("snark")(4);
-        const testState = updateStateObj(test2, "test");
-        expect(testState).toEqual({test:{strength: 0, intelligence: 0, snark: 4, charm: 0, agility: 0, characterType: ""}});
-    })
+        const test2 = changeCharState("strength")(1);
+        const testState2 = updateStateObj(test2, "test");
+        expect(testState2).toEqual({test:{strength: 9, intelligence: 10, snark: 1, charm: 1, agility: 7, characterType: "android"}});
+    });
 });
-
-// const blueFood = changePlantState("soil")(5);
-// const newState3 = updateStateObj(blueFood, "Norman");
-
-
-
-// describe('changeState', () => {
-//   test("This will test that state exists", () => {
-//     expect(stateControl()).toEqual({});
-//   });
-
-//   test("This will test that state is being changed.", () => {
-//     // const stateControl = storeState();
-//     const test = changeState("test")(1);
-//     expect(stateControl(test)).toEqual({test:1});
-//   });
-// });

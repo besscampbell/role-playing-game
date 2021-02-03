@@ -1,0 +1,12 @@
+.jumbotron {
+  letter-spacing: 10px;
+  background: rgb(194, 180, 101);
+}
+
+#playButton{
+  letter-spacing: 2px;
+}
+
+#hiddenResponse {
+  display: none;
+}
