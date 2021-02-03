@@ -16,7 +16,7 @@ describe('character', () => {
         const test = addCharToState(defaultValues)("test")
         const test2 = changeCharState("snark")(4);
         const testState = updateStateObj(test2, "test");
-        expect(updateStateObj(test)).toEqual({test:{strength: 0, intelligence: 0, snark: 4, charm: 0, agility: 0, characterType: ""}});
+        expect(testState).toEqual({test:{strength: 0, intelligence: 0, snark: 4, charm: 0, agility: 0, characterType: ""}});
     })
 });
 
