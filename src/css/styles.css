@@ -1,6 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto&display=swap');
+/* font-family: 'Orbitron', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
 .jumbotron {
   letter-spacing: 10px;
   background: rgb(194, 180, 101);
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+}
+
+#jumboHeader {
+  font-style: italic;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
 }
 
 #playButton{
@@ -9,4 +24,14 @@
 
 #hiddenResponse {
   display: none;
+}
+
+#battleFieldHidden {
+  display: none;
+}
+
+#playerButtons {
+  padding: 5px;
+  margin: 5px;
+  letter-spacing: 2px;
 }

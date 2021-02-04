@@ -1,6 +1,8 @@
 _Sci-fi '80 High School RPG!!_
 
-#### _In-class homework assignment at Epicodus, building an RPG with functional programming in Javascrpt & webpack with Tests, 2.3.21_
+#### _In-class homework assignment at Epicodus, building an RPG with functional programming in Javascrpt & webpack with Tests_
+
+##### Project began on 2.3.21. Last updated 2.4.21_
 
 #### By _**Bess Campbell, Kaila Sprague-Mcrae, Danielle Thompson**_
 
