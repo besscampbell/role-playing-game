@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sci-Fi/80's Prom RPG</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>SCI-FI 80'S HIGH SCHOOL RPG <br> <span id="jumboHeader">(pew pew!)</span></h1>
+    </div>
+    <form id="rpgForm">
+      <div class="card">
+        <div class="card-body">
+          <div class="form-group">
+            <div class="dropdown">
+              <label for="dropDownCharacter">Choose Your Character:</label>
+              <select class="btn btn-secondary dropdown-toggle" id="dropDownCharacter" name="dropDownCharacter">
+                <option for="dropDownCharacter" disabled>Choose a Character:</option>
+                <option for="dropDownCharacter" value="pilot">Pilot</option>
+                <option for="dropDownCharacter" value="promQueen">Prom Queen</option>
+                <option for="dropDownCharacter" value="timeTraveler"> Traveler</option>
+                <option for="dropDownCharacter" value="blorgon">Blorgon</option>
+                <option for="dropDownCharacter" value="android">Android</option>
+              </select>
+              <div class="form-group">
+                <label for="characterName">Enter a name for your chosen character.</label>
+                <input id="characterName" class="form-control" type="text" placeholder="Janie 'the Rock' Johnson" required>
+              </div>
+              <button type="submit" class="btn btn-success" id="playButton">PLAY</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+    <div class="row" id="hiddenResponse">
+      <form id="enemyForm">
+        <div class="card">
+          <div class="card-body">
+            <div class="form-group">
+              <div class="dropdown">
+                <label for="dropDownEnemies">Choose Your Character:</label>
+                <select class="btn btn-secondary dropdown-toggle" id="dropDownEnemies" name="dropDownEnemies">
+                  <option for="dropDownEnemies" disabled>Choose a Character:</option>
+                  <option for="dropDownEnemies" value="promKing">Prom King</option>
+                  <option for="dropDownEnemies" value="mysticalCloud">Mystical Cloud</option>
+                  <option for="dropDownEnemies" value="badSanta">Bad Santa</option>
+                  <option for="dropDownEnemies" value="borg">Borg</option>
+                  <option for="dropDownEnemies" value="evilDawn">Evil Dawn</option>
+                </select>
+                <button type="button" class="btn btn-danger" id="fightButton">FIGHT TO THE DEATH</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="form-group" id="battleFieldHidden">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card" style="width: 26rem;">
+            <div class="card-body">
+              <div id="showCharacterStats"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card" style="width: 26 rem;">
+            <div class="card-body">
+              <div id="showEnemyStats"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" id="playerButtons">
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <button class="btn btn-warning" id="quickHit">Quick Hit</button>
+          <button class="btn btn-danger" id="superAttack">Super Attack</button>
+          <button class="btn btn-primary" id="heal">Heal</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<script type="text/javascript" src="/role-playing-game/bundle.js"></script></body>
+</html>
